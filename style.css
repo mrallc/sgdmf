@@ -1,0 +1,46 @@
+body {
+    top:0px;
+    left:0px;
+    margin:20px;
+    padding:20px;
+    font-size:large;
+    font-family: monospace;
+    border: 1px solid #ddd;
+}
+
+canvas {
+    padding:5px;
+    margin:5px;
+    border: 1px solid #aaa;
+}
+
+input {
+    width:100%;
+}
+
+table{
+    padding:5px;
+    margin:5px;
+    text-align:left;
+    border-collapse:collapse
+}
+
+td,th{
+    padding:10px;
+    border:1px solid #ddd
+}
+
+p {
+    padding:5px;
+    margin:5px;
+    text-align:left;
+    margin-bottom:20px;
+}
+
+.hl {
+    background-color:yellow;
+}
+
+.right {
+    text-align:right;
+}
