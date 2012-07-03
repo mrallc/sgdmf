@@ -16,7 +16,7 @@ $(function() {
 	i.push("and <a href='http://xoba-public.s3.amazonaws.com/752b8adf3379ea424554f7304842edbd.pdf'>Koren et al.</a> for related work.");
 	i.push("Only <span class='hl'>CHROME</span> browser seems fast enough for this, and");
 	i.push("if \"time per frame\" below is highlighted,");
-	i.push("try reducing \"frame rate\" or \"iterations per frame.\"");
+	i.push("try increasing \"frame period\" or reducing \"iterations per frame.\"");
 	i.push("</p>");
 	
 	i.push('<a href="https://github.com/mrallc/sgdmf"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>');
