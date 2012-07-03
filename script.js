@@ -8,13 +8,15 @@ $(function() {
 	i.push("<p>");
 	i.push("This is a demo of stochastic gradient descent applied to matrix factorization");
 	i.push("with nuclear-norm regularization.");
-	i.push("'lambda' penalizes model complexity (in terms of rank), so");
+	i.push("\"lambda\" penalizes model complexity (in terms of rank), so");
 	i.push("smaller lambda's yield more accuracy.");
 	i.push("You can drag/drop your own images here too,");
 	i.push("although obviously the technique is more appropriate for sparse matrices or non-imaging purposes.");
 	i.push("See <a href='http://xoba-public.s3.amazonaws.com/2a027d92d63489e5042bc1bcdcfa42b2.pdf'>Recht et al.</a>");
 	i.push("and <a href='http://xoba-public.s3.amazonaws.com/752b8adf3379ea424554f7304842edbd.pdf'>Koren et al.</a> for related work.");
-	i.push("Only <span class='hl'>CHROME</span> browser seems fast enough for this.");
+	i.push("Only <span class='hl'>CHROME</span> browser seems fast enough for this, and");
+	i.push("if \"time per frame\" below is highlighted,");
+	i.push("try reducing \"frame rate\" or \"iterations per frame.\"");
 	i.push("</p>");
 	
 	i.push('<a href="https://github.com/mrallc/sgdmf"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>');
@@ -58,8 +60,20 @@ $(function() {
 
 	var add = function(title,id) {
 	    rows.push("<tr><td>"+title+":</td><td class='right' id='"+id+"'></td></tr>");
-	    self[id] = function(t) {
+	    self[id] = function(t,hl) {
 		$('#'+id).html(t);
+
+		var highlight = false;
+
+		if (hl != undefined) {
+		    highlight = hl;
+		}
+
+		if (highlight) {
+		    $('#'+id).addClass("hl");
+		} else {
+		    $('#'+id).removeClass("hl");
+		}
 	    };
 	};
 
@@ -246,7 +260,11 @@ $(function() {
 	    
 	    var time = endTime-startTime;
 	    
-	    state.stats.time(time + " ms");
+	    if (time < state.period) {
+	 	state.stats.time(time + " ms");
+	    } else {
+	 	state.stats.time(time + " ms", true);
+	    }
 
 	    iterate();
 
