@@ -364,7 +364,7 @@ $(function() {
 		return fmt(iv.toFixed(0)) + " per frame";
 	    });
 
-	    new Slider('frame period',db(50),db(3000),db(state.period),function(v) {
+	    new Slider('frame period',db(50),db(1000),db(state.period),function(v) {
 		var iv = idb(v)
 		state.period = idb(v);
 		return fmt(iv.toFixed(0)) + " ms";
