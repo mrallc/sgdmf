@@ -15,9 +15,10 @@ $(function() {
 	i.push("See <a href='http://xoba-public.s3.amazonaws.com/2a027d92d63489e5042bc1bcdcfa42b2.pdf'>Recht et al.</a>");
 	i.push("and <a href='http://xoba-public.s3.amazonaws.com/752b8adf3379ea424554f7304842edbd.pdf'>Koren et al.</a> for related work.");
 	i.push("Only <span class='hl'>CHROME</span> browser seems fast enough for this.");
-	i.push("Collaboration welcome at <a href='https://github.com/mrallc/sgdmf'>github</a>.");
 	i.push("</p>");
 	
+	i.push('<a href="https://github.com/mrallc/sgdmf"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>');
+
 	$('#main').html(i.join(" "));
 	
     })();
