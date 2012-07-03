@@ -1,4 +1,4 @@
 javascript demo of stochastic gradient descent applied to matrix
 factorization, using nuclear norm regularization.
 
-see http://xoba.com/ml for live demo. only chrome seems to be fast enough.
+see http://xoba.com/ml for live version; only chrome seems to be fast enough.

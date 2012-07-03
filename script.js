@@ -6,7 +6,8 @@ $(function() {
 	var i = [];
 
 	i.push("<p>");
-	i.push("This is a demo of stochastic gradient descent applied to matrix factorization.");
+	i.push("This is a demo of stochastic gradient descent applied to matrix factorization");
+	i.push("with nuclear-norm regularization.");
 	i.push("'lambda' penalizes model complexity (in terms of rank), so");
 	i.push("smaller lambda's yield more accuracy.");
 	i.push("You can drag/drop your own images here too,");
@@ -14,7 +15,7 @@ $(function() {
 	i.push("See <a href='http://xoba-public.s3.amazonaws.com/2a027d92d63489e5042bc1bcdcfa42b2.pdf'>Recht et al.</a>");
 	i.push("and <a href='http://xoba-public.s3.amazonaws.com/752b8adf3379ea424554f7304842edbd.pdf'>Koren et al.</a> for related work.");
 	i.push("Only <span class='hl'>CHROME</span> browser seems fast enough for this.");
-	i.push("Please welcome to collaborate on this at <a href=''>github</a>.");
+	i.push("Collaboration welcome at <a href='https://github.com/mrallc/sgdmf'>github</a>.");
 	i.push("</p>");
 	
 	$('#main').html(i.join(" "));
