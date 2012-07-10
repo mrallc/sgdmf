@@ -322,7 +322,7 @@ $(function() {
 		lambda:1000,
 
 		period:100,
-		niter:5000,
+		niter:10000,
 
 		original: imageToMatrix(imageData),
 
