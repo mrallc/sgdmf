@@ -12,8 +12,7 @@ $(function() {
 	i.push("smaller lambda's yield more accuracy.");
 	i.push("You can drag/drop your own images here too,");
 	i.push("although obviously the technique is more appropriate for sparse matrices or non-imaging purposes.");
-	i.push("See <a href='http://xoba-public.s3.amazonaws.com/mit_20110909T132001Z.pdf'>Recht et al.</a>");
-	// i.push("and <a href='http://xoba-public.s3.amazonaws.com/752b8adf3379ea424554f7304842edbd.pdf'>Koren et al.</a>");
+	i.push("See <a target='_blank' href='http://arxiv.org/abs/0706.4138'>Recht et al.</a>");
 	i.push("for related work.");
 	i.push("Only <span class='hl'>CHROME</span> browser seems fast enough for this, and");
 	i.push("if \"time per frame\" below is highlighted,");
